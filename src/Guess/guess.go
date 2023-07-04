@@ -1,4 +1,4 @@
-package guess
+package main
 
 /*
 1. 플레이어가 추측할 1에서 100사이의 난수를 목표값으로 지정.
