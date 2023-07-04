@@ -1,4 +1,4 @@
-package main
+package score
 
 //60보다 작은 성적값을 입력하면 failing, 큰 값을 입력하면 passing 메세지를 출력.
 import (
