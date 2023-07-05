@@ -6,8 +6,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/golang-study/readfile"
 	"log"
+
+	"github.com/hojeonghan/golang-study/readfile"
 )
 
 func main() {
@@ -21,7 +22,7 @@ func main() {
 	// }
 
 	// fmt.Printf("Average is: %0.2f\n", sum/sampleCount)
-	numbers, err := readfile.ReadFile("sampledata.txt")
+	numbers, err := readfile.ReadFloatFile("sampledata.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
