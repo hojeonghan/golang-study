@@ -7,8 +7,11 @@ import (
 )
 
 func main() {
-	address := structset.Address{Street: "123 Seodaemunro", City: "Seoul", State: "KR", PostalCode: "01234"}
 	subscriber := structset.Subscriber{Name: "Aman Singh"}
-	subscriber.HomeAddress = address
-	fmt.Println(subscriber.HomeAddress)
+	subscriber.Address.Street = "123 Oak St"
+	subscriber.Address.City = "Omaha"
+	subscriber.State = "NE"
+	subscriber.PostalCode = "63111"
+	fmt.Println("Street: ", subscriber.Street)
+	fmt.Println("Street: ", subscriber.Street)
 }
