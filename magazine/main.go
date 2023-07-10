@@ -7,9 +7,8 @@ import (
 )
 
 func main() {
-	var employee structset.Employee
-	employee.Name = "Joy Carr"
-	employee.Salary = 60000
-	fmt.Println(employee.Name)
-	fmt.Println(employee.Salary)
+	address := structset.Address{Street: "123 Seodaemunro", City: "Seoul", State: "KR", PostalCode: "01234"}
+	subscriber := structset.Subscriber{Name: "Aman Singh"}
+	subscriber.HomeAddress = address
+	fmt.Println(subscriber.HomeAddress)
 }

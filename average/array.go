@@ -1,3 +1,4 @@
+// static array를 선언해서 사용하는 예제
 package main
 
 import (
