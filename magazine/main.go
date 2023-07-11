@@ -2,16 +2,40 @@ package main
 
 import (
 	"fmt"
-
-	"github.com/hojeonghan/golang-study/structset"
 )
 
+type Employee struct {
+	Name   string
+	Salary float64
+	Address
+}
+
+type Subscriber struct {
+	Name   string
+	Rate   float64
+	Active bool
+	Address
+}
+
+type Address struct {
+	Street     string
+	City       string
+	State      string
+	PostalCode string
+}
+
 func main() {
-	subscriber := structset.Subscriber{Name: "Aman Singh"}
-	subscriber.Address.Street = "123 Oak St"
-	subscriber.Address.City = "Omaha"
-	subscriber.State = "NE"
-	subscriber.PostalCode = "63111"
-	fmt.Println("Street: ", subscriber.Street)
-	fmt.Println("Street: ", subscriber.Street)
+	address := Address{
+		Street:     "123 Oak St",
+		City:       "Omaha",
+		State:      "NE",
+		PostalCode: "63111",
+	}
+	subscriber := Subscriber{
+		Name:    "Aman Singh",
+		Rate:    8.9,
+		Active:  true,
+		Address: address,
+	}
+	fmt.Println(subscriber)
 }
