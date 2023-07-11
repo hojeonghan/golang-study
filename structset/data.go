@@ -2,13 +2,13 @@ package structset
 
 import "errors"
 
-type Data struct {
+type Date struct {
 	Year  int
 	Month int
 	Day   int
 }
 
-func (d *Data) SetYear(year int) error {
+func (d *Date) SetYear(year int) error {
 	if year < 1 {
 		return errors.New("invalid year")
 	}
@@ -16,7 +16,7 @@ func (d *Data) SetYear(year int) error {
 	return nil
 }
 
-func (d *Data) SetMonth(month int) error {
+func (d *Date) SetMonth(month int) error {
 	if month < 1 || month > 12 {
 		return errors.New("invalid month")
 	}
@@ -24,7 +24,7 @@ func (d *Data) SetMonth(month int) error {
 	return nil
 }
 
-func (d *Data) SetDay(day int) error {
+func (d *Date) SetDay(day int) error {
 	if day < 1 || day > 31 {
 		return errors.New("invalid day")
 	}

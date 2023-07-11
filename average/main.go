@@ -12,7 +12,7 @@ import (
 )
 
 // #1.mission) 파일에서 읽어온 데이터로 array 만들어 사용하는 예제
-func main() {
+func Package() {
 	numbers, err := readfile.SliceWithFile("sampledata.txt")
 	if err != nil {
 		log.Fatal(err)
